@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Season ticket application</title>
+  </head>
+  <body>
+    <img
+      src="Spurs.jpg"
+      alt="Image of the Tottenham Hotspur FC logo - a cockerel standing on a classic football"
+      width="100"
+      height="120"
+    />
+    <a
+      href="http://tottenhamhotspur.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Take me to official website</a
+    >
+
+    <h1>Tottenham Hotspur FC Season ticket application form</h1>
+    <h2>Fill out the following form:</h2>
+    <form
+      action="https://form-reader.netlify.app/.netlify/functions/formReader"
+      method="post"
+    >
+      <label for="FN">First name:</label>
+      <input id="FN" type="text" name="FN" autocomplete="Aryeh" />
+      <br />
+      <label for="LN">Last name:</label>
+      <input id="LN" type="text" name="LN" autocomplete="Birnbaum" />
+      <br />
+      <br />
+      <label for="e-mail">e-mail:</label>
+      <input
+        id="e-mail"
+        type="text"
+        name="e-mail"
+        placeholder="example123@gmail.com"
+        autocomplete="aryehbirnbaum@gmail.com"
+      />
+      <br />
+      <br />
+      <label for="tel">Phone number:</label>
+      <input id="tel" type="Number" name="tel" />
+      <br />
+      <br />
+      <label for="address">House address:</label>
+      <br />
+      <textarea
+        name="address"
+        id="address"
+        cols="15"
+        rows="5"
+        placeholder="Address line 1
+Address line 2 
+Postcode
+City"
+      ></textarea>
+      <br />
+      <br />
+      <label for="Price_category">Pricing range:</label>
+      <br />
+      <label for="£1000">£1000 (West/East upper)</label>
+      <input id="£1000" type="radio" name="Price" />
+      <br />
+      <label for="£800">£800 (West/East lower)</label>
+      <input id="£800" type="radio" name="Price" />
+      <br />
+
+      <label for="£500">£500 (North/South lower)</label>
+      <input id="£500" type="radio" name="Price" />
+      <br />
+      <label for="£460">£460 (North/South upper)</label>
+      <input id="£460" type="radio" name="Price" />
+
+      <br />
+      <br />
+      <label for="Age-category">Age Category:</label>
+      <select name="Age-category" id="Age-category">
+        <option value=""></option>
+        <option value="Senior-citizen">Senior citizen 65+</option>
+        <option value="Adult">Adult 21+</option>
+        <option value="Young-adult">Young adult 18-21</option>
+        <option value="Junior">Junior u-18</option>
+      </select>
+      <br />
+      <br />
+      <button type="submit">Send form</button>
+      <br />
+    </form>
+    <section>
+      <h3>Contact us:</h3>
+      <a href="tel:03444995000">Telephone</a>
+      <br />
+      <a href="mailto:ticket.office@tottenhamhotspur.com">Mail</a>
+    </section>
+    <footer>
+      Tottenham Hotspur FC
+      <small>&copy; 2023</small>
+      <address>
+        Tottenham Hotspur Football Club, Lilywhite House, 782 High Road, London
+        N17 0BX
+      </address>
+    </footer>
+  </body>
+</html>
