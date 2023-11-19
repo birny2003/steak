@@ -1,0 +1,74 @@
+section.box {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  padding-top: 27vw;
+  height: 75vw;
+}
+.younes {
+  background-image: url(Kaboul.jpg);
+}
+.upper-main {
+  background-image: url(abstract-blue-background_78370-60.jpg.avif);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}
+div.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(179, 59%, 99%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6px;
+  margin: 50px;
+}
+
+h3,
+h4 {
+  color: hsl(251, 69%, 16%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  color: hsl(251, 69%, 16%);
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  width: 60%;
+}
+li {
+  margin-bottom: 5px;
+}
+
+@media print {
+  h1,
+  h2 {
+    color: black;
+  }
+}
+@media (min-width: 600px) {
+  section.younes {
+    padding-top: 28vw;
+    margin: 12px;
+    background-size: contain;
+  }
+  div.heading {
+    font-size: 12px;
+  }
+  h3,
+  h4 {
+    font-size: 25px;
+  }
+  ul {
+    font-size: 22px;
+  }
+}
