@@ -1,52 +1,75 @@
-section.box {
+.box {
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: contain;
-  padding-top: 27vw;
-  height: 75vw;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: top center;
+  background-color: #000;
 }
 .younes {
   background-image: url(Kaboul.jpg);
+  position: fixed;
+  z-index: -1;
+  min-height: 75vw;
+  width: 100%;
 }
 .upper-main {
-  background-image: url(abstract-blue-background_78370-60.jpg.avif);
+  background-image: url(background.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
+  height: 35vh;
 }
 div.heading {
   display: flex;
+  padding-top: 27vw;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   color: hsl(179, 59%, 99%);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 6px;
-  margin: 50px;
+  /* margin: 50px; */
 }
-
+h1 {
+  margin-top: 100px;
+}
+h3 {
+  margin-top: 105px;
+  margin-bottom: 15px;
+}
 h3,
 h4 {
   color: hsl(251, 69%, 16%);
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 16px;
+  font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 4px;
+  margin-top: 0px;
 }
 
 ul {
   color: hsl(251, 69%, 16%);
   display: flex;
   flex-direction: column;
-  font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-family: Helvetica;
   margin: auto;
   width: 60%;
 }
 li {
   margin-bottom: 5px;
+}
+.middle-main {
+  background-image: url(bale-vdv.jpg);
+  color: hsl(179, 59%, 99%);
+  font-size: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.report {
+  margin-right: 290px;
 }
 
 @media print {
@@ -64,11 +87,42 @@ li {
   div.heading {
     font-size: 12px;
   }
+  .upper-main {
+    height: 120vh;
+  }
+  h3 {
+    padding-top: 200px;
+  }
   h3,
   h4 {
     font-size: 25px;
+    margin-bottom: 5px;
+  }
+  h4 {
+    margin-top: 30px;
   }
   ul {
     font-size: 22px;
+  }
+  li {
+    margin: 10px;
+  }
+  .middle-main {
+    font-size: 25px;
+    height: 125vh;
+  }
+  .report {
+    margin-right: 750px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    margin-top: 210px;
+  }
+}
+
+@media (min-width: 1024px) {
+  div.heading {
+    font-size: 18px;
   }
 }
